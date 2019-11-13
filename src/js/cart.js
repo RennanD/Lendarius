@@ -44,18 +44,20 @@ ul.innerHTML = burgers.map(burger => {
     const data =
         `
         <li>
-
-            <div class = add-to-cart>
-                <button id = "add" onClick = "addBurger(${id},'${burger.name}', ${burger.preco})">Adicionar ao carrinho</button>
-            </div>
-            <div class = "add-to-cart">
-                <button onClick = "removeQTY(${id}, 1)" id = "remove"> + </button>
-                <div  class = "quantidade"><p id ="${id}">0</p> </div>
-                <button  onClick = "addQTY(${id}, 1)" id = "sum" > + </button>
-            </div>
-            <footer>
-                <strong>${burger.name} R$${burger.preco}</strong>
+            <header>
+                <strong>${burger.name}</strong>
+                <p id ="${id}">0</p>
+                <span>R$ ${burger.preco}</span>
+            </header>
+            <main>
                 <p>${burger.ingredientes}</p>
+                <div>
+                    <button onClick = "removeQTY(${id}, 1)"> - </button>
+                    <button onClick = "addQTY(${id}, 1)"> +</button>
+                </div>
+            </main>
+            <footer>
+                <button id = "add" onClick = "addBurger(${id},'${burger.name}', ${burger.preco})">Adicionar ao carrinho</button>
             </footer>
         </li>
             

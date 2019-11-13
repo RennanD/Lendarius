@@ -1,25 +1,64 @@
 .request {
+    max-width: 100%x;
+    margin: 0 auto;
+    padding: 100px; 
+    text-align: center;
+    background-size: cover;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.request ul {
+    color: #fefefe;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+
+.request ul li header {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
+    padding: 15px;
+    background: #000;
+    border-radius: 5px 5px 0 0;
+    height: 50px;
 }
 
-#number {
-    border: none;
-    border: 1px solid #ddd;
-    border-radius: 10px; 
+.request ul li header strong {
+    flex: 2;
+    font-size: 26px;
+}
+.request ul li header p {
+    flex: 1;
     font-size: 20px;
-    padding: 10px 20px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #999;
 }
 
-#number::placeholder {
-    color: #999;
-    font-size: 16px;
+.request ul li header span {
+    flex: 1;
+    font-size: 22px;
+    color: #ddd;
+}
+
+.request ul li main {
+    display: flex;
+    color: #666;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+    background: #FFF;
+    border: #eee;
+    height: 200px;
+}
+
+.request ul li main button {
+    border: none;
+    color: #fefefe;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 #cart {
@@ -44,60 +83,11 @@
     font-size: 22px;
 }
 
-.add-to-cart {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
 
-.add-to-cart input {
-    text-align: center;
-    font-size: 15px;
-}
-.add-to-cart button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 100%;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.add-to-cart button:hover {
-    opacity: 0.8;
-}
-
-.add-to-cart #remove {
-    flex: 1;
-    background: #dc3545;
-    color: #fefefe;
-}
-
-.add-to-cart #sum {
-    flex: 1;
-    background: #28a745;
-    color: #fefefe;
-}
-
-.add-to-cart #add {
-    flex: 1;
-    background: #17a2b8;
-    border-radius: 5px 5px 0 0;
-    color: #fefefe;
-}
-
-.add-to-cart .quantidade {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-}
 
 @media screen and (max-width: 800px) {
-    .request {
-        height: 180vh;
+    .request ul {
+        grid-template-columns: 1fr;
     }
     
 }
