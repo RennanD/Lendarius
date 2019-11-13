@@ -1,0 +1,10 @@
+.request {
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 800px) {
+    .request {
+        height: 130vh;
+    }
+}

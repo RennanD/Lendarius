@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap');
+
+
+body .main-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../assets/banner.jpeg');
+    background-size: cover;
+    -webkit-font-smoothing: antialiased !important;
+  }
+  
+  body .main-container h1 {
+    color: #fea845;
+    text-align: center;
+    font-size: 88px;
+    text-transform: uppercase;
+    font-family: 'agency fb', sans-serif;
+  }
+  
+  body .main-container h2 {
+    color: #fff !important;
+    font-size: 200px;
+    font-family: 'Nanum Brush Script';
+  }
+  
+  .main-container a {
+    margin: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 7px;
+    height: 50px;
+    width: 300px;
+    padding: 0 20px;
+    font-size: 24px;
+    font-weight: 600;
+    background: #f05a5b;
+    color: #FFF;
+    cursor: pointer;
+  }
+  
+.main-container a:hover {
+    opacity:0.9;
+}
+
+.main-container p {
+    color: #fff;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  body .main-container h1 {
+    font-size: 40px;
+  }
+  body .main-container h2 {
+    font-size: 100px;
+  }
+  body .main-container p {
+    text-align: center;
+    font-size: 17px;
+  }
+}

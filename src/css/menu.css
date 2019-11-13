@@ -1,0 +1,77 @@
+.menu-container {
+    max-width: 100%x;
+    margin: 0 auto;
+    padding: 100px; 
+    text-align: center;
+    background: url('../assets/Background-black.svg');
+    background-size: cover;
+    -webkit-font-smoothing: antialiased !important;
+    
+  }
+  
+  .menu-container h1 {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    font-family: 'agency fb';
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 55px;
+  }
+  
+  .menu-container h1 span {
+    font-family: 'agency fb';
+    
+  }
+  
+  .menu-container ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .menu-container ul li {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-container ul li img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .menu-container ul li footer {
+    flex: 1;
+    background: #FFF;
+    border: 1px solid #EEE;
+    padding: 15px 20px;
+    text-align: left;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  .menu-container ul li footer strong {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .menu-container ul li footer p {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #666;
+    line-height: 18px;
+    margin-top: 1px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .menu-container {
+      padding: 30px;
+      height: 150vh;
+    }
+    .menu-container h1 {
+      font-size: 32px;
+    }
+    .menu-container ul {
+      grid-template-columns: 1fr;
+    }
+  }

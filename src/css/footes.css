@@ -1,0 +1,58 @@
+footer .main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40vh;
+    background: #2e2e2e;
+  }
+  .main-footer img {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .main-footer ul {
+    list-style: none;
+  }
+  
+  .main-footer ul li {
+    margin-top: 7px;
+    color: #FEFEFE;
+    font: 30px 'agency fb' ;
+  }
+  
+  footer .end {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #FEFEFE;
+    font-size: 20px;
+    height: 10vh;
+    background: #252525;
+  }
+  
+  footer .end .powerd {
+    font-size: 18px;
+    color: #999;
+  }
+  
+  footer .end a {
+    color: #DDD;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .main-footer {
+      flex-direction: column;
+    }
+    .main-footer img {
+      height: 130px;
+      width: 130px;
+    }
+    .main-footer ul li {
+      font-size: 23px;
+    }
+    .main-footer.end {
+      font-size: 14px;
+    }
+  }

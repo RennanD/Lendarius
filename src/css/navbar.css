@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap');
+
+body .navbar {
+    display: flex;
+    width: 100%;
+    background: #000000;
+    height: 18vh;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .navbar .logo {
+    display: flex;
+    flex: 1;
+    align-items:  center;
+    
+  }
+
+  .navbar .logo img {
+    height: 150px;
+    width: 150px;
+  }
+  
+  .logo h1 {
+    color: #FEFEFE;
+    font-size: 32px;
+    font-family: 'Nanum Brush Script';
+    
+  }
+  
+  body .navbar ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    list-style: none;
+    color: #FEFEFE;
+  }
+  
+  body .navbar ul li {
+    margin-right: 20px;
+  }
+  
+  .navbar ul .menu-burger {
+    display: none;
+  }
+  
+  
+  body .navbar ul li:hover {
+    border-bottom: #FEFEFE 4px solid;
+  }
+  
+  body .navbar ul li a {
+    text-decoration: none;
+    color: #fff !important;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Agency FB';
+  }
+
+@media screen and (max-width: 800px) {
+  body .navbar ul li {
+    display: none;
+  }
+  body .navbar .menu-burger {
+    font-size: 30px;
+    display: block;
+  }
+  body .navbar .menu-burger:hover{
+    border-bottom: none;
+  }
+
+  .navbar .logo img {
+    height: 80px;
+    width: 80px;
+  }
+
+  
+}

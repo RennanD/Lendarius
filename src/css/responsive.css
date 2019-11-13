@@ -1,0 +1,22 @@
+@media screen and (max-width: 700px) {
+    
+
+      .main-footer {
+        flex-direction: column;
+      }
+      .main-footer img {
+        height: 100px;
+        width: 100px;
+      }
+      .main-footer ul li {
+        font-size: 20px;
+      }
+      .main-footer.end p {
+        font-size: 12px;
+        text-align: center;
+      }
+      .float {
+        bottom:20px;
+        right:20px;
+      }
+  }
