@@ -52,8 +52,8 @@ ul.innerHTML = burgers.map(burger => {
             <main>
                 <p>${burger.ingredientes}</p>
                 <div>
-                    <button onClick = "removeQTY(${id}, 1)"> - </button>
-                    <button onClick = "addQTY(${id}, 1)"> +</button>
+                    <button onClick = "removeQTY(${id}, 1)" class = "remove"> - </button>
+                    <button onClick = "addQTY(${id}, 1)" class = "added"> +</button>
                 </div>
             </main>
             <footer>
@@ -95,20 +95,21 @@ function removeQTY(id, value) {
 
 function addBurger(id, name, preco) {
 
-    const p = document.getElementById(id).textContent
+    const p = document.getElementById(id)
 
-    const quantidade = parseFloat(p)    
+    const quantidade = parseFloat(p.textContent)    
 
     if(quantidade < 1 ) return alert('Peça pelo menos um hamburguer')
 
 
     cart.push({
+        quantidade,
         name,
         preco: quantidade * preco,
     })
 
     
-    itens.innerHTML = cart.map(product => (`<li>${quantidade} x ${product.name}</li>`)).join('')
+    itens.innerHTML = cart.map(product => (`<li>${product.quantidade} x ${product.name}</li>`)).join('')
 
     const total = cart.reduce(function(total, precoItem){
         return total + precoItem.preco;
@@ -117,7 +118,8 @@ function addBurger(id, name, preco) {
 
 
     valor.innerHTML = `<p>Valor total: R$ ${total}</p>`
-    
+    p.innerHTML = 0
+
     alert('Produto adicionado ao a carrinho')
 }
     

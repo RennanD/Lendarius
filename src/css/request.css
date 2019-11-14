@@ -1,5 +1,5 @@
 .request {
-    max-width: 100%x;
+    max-width: 100%;
     margin: 0 auto;
     padding: 100px; 
     text-align: center;
@@ -27,7 +27,7 @@
 
 .request ul li header strong {
     flex: 2;
-    font-size: 26px;
+    font-size: 21px;
 }
 .request ul li header p {
     flex: 1;
@@ -50,6 +50,7 @@
     background: #FFF;
     border: #eee;
     height: 200px;
+    font-size: 20px;
 }
 
 .request ul li main button {
@@ -61,10 +62,30 @@
     border-radius: 50%;
 }
 
+.added {
+    background: #26a69a;
+}
+
+.remove {
+    background: #E57373;
+}
+
+#add{
+    font-size: 17px;
+    color: #fefefe;
+    border-radius: 0 0 5px 5px;
+    border: none;
+    height: 50px;
+    width: 100%;
+    background: #17a2b8;
+}
+
 #cart {
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
     align-self: center;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -83,9 +104,38 @@
     font-size: 22px;
 }
 
+.address {
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+    height: 40px;
+}
 
+.finish {
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 160px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fefefe;
+    background: #17a2b8;
+    cursor: pointer;
+}
+.finish:hover {
+    opacity: 0.8;
+}
 
 @media screen and (max-width: 800px) {
+    .request {
+        padding: 30px;
+    }
     .request ul {
         grid-template-columns: 1fr;
     }
