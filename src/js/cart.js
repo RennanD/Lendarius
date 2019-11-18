@@ -109,7 +109,7 @@ function addBurger(id, name, preco) {
     })
 
     
-    itens.innerHTML = cart.map(product => (`<li>${product.quantidade} x ${product.name}</li>`)).join('')
+    itens.innerHTML = cart.map(product => (`<li> - ${product.quantidade} x ${product.name}</li>`)).join('')
 
     const total = cart.reduce(function(total, precoItem){
         return total + precoItem.preco;

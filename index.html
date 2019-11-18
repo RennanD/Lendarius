@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Lendárius Hamburgueria</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
@@ -18,38 +18,70 @@
     <link rel="stylesheet" href="/src/css/floatbutton.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="./src/assets/Logo.svg" alt="">
-            <h1>Lendárius</h1>
-        </div>
-        <ul>
-            <li>
-                <i class="fas fa-home"></i>
-                <a href="">Home</a>
-            </li>
-            <li>
-                <i class="fas fa-info-circle"></i>
-                <a href="">Sobre</a>
-            </li>
-            <li>
-                <i class="fas fa-hamburger"></i>
-                <a href="">Cardápio</a>
-            </li>
-            <li>
-                <i class="fab fa-facebook-messenger"></i>
-                <a href="">Contato</a>
-            </li>
-            <li>
-                <i class="fas fa-bicycle"></i>
-                <a href="./pages/pedido.html">Faça seu pedido</a>
-            </li>
-            <li class = "menu-burger">
-                <i class="fas fa-bars"></i>
-            </li>
-        </ul>
-    </nav>
+        
     <section id = "banner">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./src/assets/Logo.svg" alt="">
+                <h1>Lendárius</h1>
+            </div>
+            <ul>
+                <li>
+                    <i class="fas fa-home"></i>
+                    <a href="#banner">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-info-circle"></i>
+                    <a href="#about">Sobre</a>
+                </li>
+                <li>
+                    <i class="fas fa-hamburger"></i>
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li>
+                    <i class="fab fa-facebook-messenger"></i>
+                    <a href="">Contato</a>
+                </li>
+                <li>
+                    <i class="fas fa-bicycle"></i>
+                    <a href="./pages/pedido.html">Faça seu pedido</a>
+                </li>
+            </ul>
+            
+        </nav>
+        <nav class="mobile">
+            <div class="logo-mobile">
+                <div>
+                    <img src="./src/assets/Logo.svg" alt="">
+                    <h1>Lendárius</h1>
+                </div>
+                <button id ="burger-menu">
+                        <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="links" >
+                <li>
+                    <i class="fas fa-home"></i>
+                    <a href="#banner">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-info-circle"></i>
+                    <a href="#about">Sobre</a>
+                </li>
+                <li>
+                    <i class="fas fa-hamburger"></i>
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li>
+                    <i class="fab fa-facebook-messenger"></i>
+                    <a href="">Contato</a>
+                </li>
+                <li>
+                    <i class="fas fa-bicycle"></i>
+                    <a href="./pages/pedido.html">Faça seu pedido</a>
+                </li>
+            </ul>               
+        </nav>
 
         <main class="main-container">
             <h1>Bateu aquela fome?</h1>
@@ -179,6 +211,6 @@
     <a href = "./pages/pedido.html" class = "float">
         <i class="fas fa-shopping-cart"></i>
     </a>
-    
+    <script src="./src/js/burger-menu.js"></script>
 </body>
 </html>

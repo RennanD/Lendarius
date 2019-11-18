@@ -15,18 +15,45 @@
     
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="../src/assets/Logo.svg" alt="">
-            <h1>Lendárius</h1>
-        </div>
-        <ul>
-            <li>
-                <i class="fas fa-home"></i>
-                <a href="">Home</a>
-            </li>
-        </ul>
-    </nav>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../src/assets/Logo.svg" alt="">
+                <h1>Lendárius</h1>
+            </div>
+            <ul>
+                <li>
+                    <i class="fas fa-home"></i>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-bicycle"></i>
+                    <a href="./pages/pedido.html">Faça seu pedido</a>
+                </li>
+            </ul>
+                
+        </nav>
+        <nav class="mobile">
+            <div class="logo-mobile">
+                <div>
+                    <img src="../src/assets/Logo.svg" alt="">
+                    <h1>Lendárius</h1>
+                </div>
+                <button id ="burger-menu">
+                        <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="links" >
+                <li>
+                    <i class="fas fa-home"></i>
+                    <a href="../index.html">Home</a>
+                </li>
+                    
+                <li>
+                    <i class="fas fa-bicycle"></i>
+                    <a href="./pages/pedido.html">Faça seu pedido</a>
+                </li>
+            </ul>               
+        </nav>
 
     <button class="btnModal" id="myBtn">Ver Carrinho</button>
 
@@ -40,7 +67,7 @@
                 <strong id="itens">Itens: </strong><br>
                 <ul id= "list-itens"></ul>
                 <strong id = "valor">Valor: </strong><br>
-                <input type="text" class="address" id = "addressUser" placeholder="Endereço completo">
+                <input type="text" class="address" id = "addressUser" placeholder="Endereço completo" required>
                 <button id = "finish" class="finish">Finalizar Pedido</button>
             </div>
         </div>
@@ -85,5 +112,6 @@
     <script src="../src/js/cart.js"></script>
     <script src="../src/js/modal.js "></script>
     <script src="../src/js/finish.js "></script>
+    <script src="../src/js/burger-menu.js"></script>
 </body>
 </html>

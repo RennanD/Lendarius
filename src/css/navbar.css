@@ -3,8 +3,9 @@
 body .navbar {
     display: flex;
     width: 100%;
+    position: fixed;
     background: #000000;
-    height: 18vh;
+    height: 15vh;
     padding: 20px;
     align-items: center;
     justify-content: space-between;
@@ -33,7 +34,7 @@ body .navbar {
   body .navbar ul {
     display: flex;
     flex: 1;
-    justify-content: space-around;
+    justify-content: flex-end;
     list-style: none;
     color: #FEFEFE;
   }
@@ -60,8 +61,74 @@ body .navbar {
     font-family: 'Agency FB';
   }
 
+#burger-menu {
+  background: transparent;
+  border: none;
+  color: #FEFEFE;
+  font-size: 24px;
+  left:0;
+}
+
+.mobile {
+  position: fixed;
+  display: none;
+  width: 100%;
+}
+
+.logo-mobile {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+  background: #000000;
+}
+
+.logo-mobile h1 {
+  color: #FEFEFE;
+  font-size: 32px;
+  font-family: 'Nanum Brush Script';
+  
+}
+
+.logo-mobile button {
+  margin-right: 40px;
+}
+
+.logo-mobile div {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: none;
+  width: 100%;
+  background: #000000;
+  padding: 20px;
+  color: #fefefe;
+}
+
+.active {
+  display: block;
+}
+
+.links li {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.links li a {
+  text-decoration: none;
+  color: #fff !important;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Agency FB';
+}
+
 @media screen and (max-width: 800px) {
-  body .navbar ul li {
+
+  body .navbar {
     display: none;
   }
   body .navbar .menu-burger {
@@ -77,5 +144,8 @@ body .navbar {
     width: 80px;
   }
 
+  .mobile {
+    display: block;
+  }
   
 }

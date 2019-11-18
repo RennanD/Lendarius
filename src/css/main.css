@@ -7,7 +7,7 @@ body .main-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 85vh;
+    height: 100vh;
     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../assets/banner.jpeg');
     background-size: cover;
     -webkit-font-smoothing: antialiased !important;
